@@ -1,0 +1,61 @@
+﻿  MLP.cpp
+C:\Users\orogo\Desktop\Projekty\ProblemXORzaPomocaAdaline\ProblemXORzaPomocaAdaline\MLP.cpp(79,14): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xutility(508,85): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „MLP.cpp”)
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xutility(508,85):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\orogo\Desktop\Projekty\ProblemXORzaPomocaAdaline\ProblemXORzaPomocaAdaline\MLP.cpp(63,10):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „Layer &std::vector<Layer,std::allocator<Layer>>::emplace_back<int&,int&,unsigned __int64>(int &,int &,unsigned __int64 &&)” funkcji szablon
+              C:\Users\orogo\Desktop\Projekty\ProblemXORzaPomocaAdaline\ProblemXORzaPomocaAdaline\MLP.cpp(63,22):
+              zobacz pierwsze odwołanie do elementu „std::vector<Layer,std::allocator<Layer>>::emplace_back” w „MLP::add_layer”
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\vector(924,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<int&,int&,unsigned __int64>(int &,int &,unsigned __int64 &&)” funkcji szablon
+          with
+          [
+              _Ty=Layer
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\vector(845,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<int&,int&,unsigned __int64>(int &,int &,unsigned __int64 &&)” funkcji szablon
+          with
+          [
+              _Ty=Layer
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\vector(863,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int&,int&,unsigned __int64>(_Alloc &,_Objty *const ,int &,int &,unsigned __int64 &&)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Layer>,
+              _Ty=Layer,
+              _Objty=Layer
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xmemory(734,14):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Objty,int&,int&,unsigned __int64>(_Ty *const ,int &,int &,unsigned __int64 &&) noexcept(<expr>)” funkcji szablon
+          with
+          [
+              _Ty=Layer,
+              _Objty=Layer
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xutility(509,90): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „MLP.cpp”)
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xutility(509,90):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\vector(863,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int&,int&,unsigned __int64>(_Alloc &,_Objty *const ,int &,int &,unsigned __int64 &&)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Layer>,
+              _Ty=Layer,
+              _Objty=Layer
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.50.35717\include\xmemory(734,14):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Objty,int&,int&,unsigned __int64>(_Ty *const ,int &,int &,unsigned __int64 &&) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Layer,
+              _Objty=Layer
+          ]
+  
+  ProblemXORzaPomocaAdaline.vcxproj -> C:\Users\orogo\Desktop\Projekty\ProblemXORzaPomocaAdaline\x64\Debug\ProblemXORzaPomocaAdaline.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
