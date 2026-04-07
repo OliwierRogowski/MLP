@@ -5,18 +5,18 @@ This project demonstrates how a neural network with hidden layers can learn non-
 Unlike a basic single-layer perceptron, this MLP consists of multiple layers of neurons, allowing it to model complex relationships between inputs and outputs.
 ### Neural Network Structure
 The project is built around two core classes:
-####Layer 
+#### Layer 
 Represents a fully connected (dense) layer. It manages a weight matrix and a bias vector.
-####MLP 
+#### MLP 
 A container for multiple Layer objects, managing the flow of data through the network.
 ### Mathematical Foundation
-####Activation Function
+#### Activation Function
 Uses the Sigmoid function to introduce non-linearity:
 $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
-####Forward Propagation
+#### Forward Propagation
 Calculates the dot product of inputs and weights, adds the bias, and applies the activation function:
 $$output = \sigma(X \cdot W + b)$$
-####Backpropagation
+#### Backpropagation
 Implements the Gradient Descent algorithm. The network calculates the error at the output and propagates it backward to update weights using the derivative of the sigmoid function:
 $$\Delta w = \eta \cdot (error \cdot \sigma'(z))$$
 
