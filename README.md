@@ -19,7 +19,11 @@ A single-layer perceptron cannot solve the XOR problem because the data is not l
   Hidden Layer: 4 neurons (allowing for non-linear feature mapping)
   Output Layer: 1 neuron.
 After 10,000 epochs of training with a learning rate ($\eta$) of 0.1, the network successfully predicts the XOR logic 
-table:0, 0 $\rightarrow$ 00, 1 $\rightarrow$ 11, 0 $\rightarrow$ 11, 1 $\rightarrow$ 0 
+table:
+0, 0 $\rightarrow$ 0
+0, 1 $\rightarrow$ 1
+1, 0 $\rightarrow$ 1
+1, 1 $\rightarrow$ 0 
 
 ## Key Technical Features
 ### Eigen Library 
