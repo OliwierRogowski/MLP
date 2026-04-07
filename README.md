@@ -7,11 +7,14 @@ Unlike a basic single-layer perceptron, this MLP consists of multiple layers of 
        Layer: Represents a fully connected (dense) layer. It manages a weight matrix and a bias vector.
        MLP: A container for multiple Layer objects, managing the flow of data through the network.
   2. Mathematical Foundation
-       Activation Function: Uses the Sigmoid function to introduce non-linearity:
+       ### Activation Function
+       Uses the Sigmoid function to introduce non-linearity:
        $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
-       Forward Propagation: Calculates the dot product of inputs and weights, adds the bias, and applies the activation function:
+       ### Forward Propagation
+       Calculates the dot product of inputs and weights, adds the bias, and applies the activation function:
        $$output = \sigma(X \cdot W + b)$$
-       Backpropagation: Implements the Gradient Descent algorithm. The network calculates the error at the output and propagates it backward to update weights using the derivative of the sigmoid function:
+       ### Backpropagation
+       Implements the Gradient Descent algorithm. The network calculates the error at the output and propagates it backward to update weights using the derivative of the sigmoid function:
        $$\Delta w = \eta \cdot (error \cdot \sigma'(z))$$
 ## The XOR Problem
 A single-layer perceptron cannot solve the XOR problem because the data is not linearly separable. This implementation solves it by using:
