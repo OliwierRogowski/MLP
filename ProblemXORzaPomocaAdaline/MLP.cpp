@@ -2,20 +2,6 @@
 #include <Eigen/Dense>
 #include <random>
 
-class Adaline{
-public:
-	// funkcja aktywacji sigmoid
-	// Funkcja sigmoid pozwala na uczenie nieliniowe modelu między innymi pozwala na rozwiwazanie problemu xor
-	// Sigmoid to funkcja przypominająca "S". Sigmoid zawsze zwraca wartość między 0 a 1 
-	double sigmoid(double z) {
-		return 1.0 / (1.0 + std::exp(-z));
-	};
-	// Pochodna funkcji mówi modelowi jak bardzo ten powinien zmienić swoją wage aby nie popełnić błędu
-	double sigmoid_derivative(double output) {
-		return output * (1.0 - output);
-	};
-};
-
 class Layer{
 public:
 	Eigen::MatrixXd weights; // macierz wag
